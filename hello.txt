@@ -28,7 +28,7 @@ git clone [url]
 $ git clone https://github.com/libgit2/libgit2
 $ git clone https://github.com/libgit2/libgit2 mylibgit在本地创建的仓库名字变为 mylibgit。
 Git 支持多种数据传输协议
-git:// 协议或者使用 SSH 传输协议，比如 user@server:path/to/repo.git
+gHELLitabcdefghijklml:// 协议或者使用 SSH 传输协议，比如 user@server:path/to/repo.git
 
 
 $ git status 检查当前文件状态
