@@ -1,1 +1,34 @@
 Hello
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+$ git config --global core.editor emacs配置默认文本编辑器
+git config --list 命令来列出所有 Git 当时能找到的配置
+
+git config core.ignorecase false ,Git默认是大小写不敏感的,建议大小把Git设置成大小写敏感。
+
+
+git config <key>： 来检查 Git 的某一项配置
+	$ git config user.name
+
+有三种方法可以找到 Git 命令的使用手册：
+
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+$ git help config
+
+$ git init
+
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+git clone [url]
+$ git clone https://github.com/libgit2/libgit2
+$ git clone https://github.com/libgit2/libgit2 mylibgit在本地创建的仓库名字变为 mylibgit。
+Git 支持多种数据传输协议
+git:// 协议或者使用 SSH 传输协议，比如 user@server:path/to/repo.git
+
+
+$ git status 检查当前文件状态
