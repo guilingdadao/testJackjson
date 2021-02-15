@@ -12,6 +12,7 @@ import com.yeg.json.model.Cif;
 import com.yeg.json.model.Cif2;
 import com.yeg.json.model.Cif3;
 import com.yeg.json.model.CifStar;
+import com.yeg.json.model.Menu;
 import com.yeg.json.model.Person;
 import com.yeg.json.model.User;
 
@@ -136,6 +137,53 @@ public class TestUtils {
 		cif3.setCifStar(cifStar);
 
 		return cif3;
+	}
+
+	public static List<Menu> initMenu() {
+		List<Menu> menuList = new ArrayList<Menu>();
+
+		Menu menu = null;
+		Menu subMenu = null;
+		{// 初始化用户管理菜单
+			menu = new Menu();
+			menu.setId(1);
+			menu.setName("用户管理");
+			menuList.add(menu);
+
+			subMenu = new Menu();
+			subMenu.setId(2);
+			subMenu.setName("用户查询");
+			menu.addChild(subMenu);
+
+			subMenu = new Menu();
+			subMenu.setId(3);
+			subMenu.setName("用户修改");
+			menu.addChild(subMenu);
+
+			subMenu = new Menu();
+			subMenu.setId(4);
+			subMenu.setName("用户删除");
+			menu.addChild(subMenu);
+		}
+
+		{// 初始化权限
+			menu = new Menu();
+			menu.setId(6);
+			menu.setName("角色管理");
+			menuList.add(menu);
+
+			subMenu = new Menu();
+			subMenu.setId(7);
+			subMenu.setName("角色");
+			menu.addChild(subMenu);
+
+			subMenu = new Menu();
+			subMenu.setId(8);
+			subMenu.setName("权限");
+			menu.addChild(subMenu);
+		}
+
+		return menuList;
 	}
 
 }
