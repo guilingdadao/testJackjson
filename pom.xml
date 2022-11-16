@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.11.2</version><!-- 2.9.8至2.9.10.4存在风险 -->
+			<version>2.12.7.1</version><!-- 2.9.8至2.9.10.4存在风险 -->
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.woodstox</groupId>
